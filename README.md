@@ -61,13 +61,57 @@ for i in range(0,df.shape[1]):
   print("---------------------------------------")
 ```
 
-![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/b76f1b3e-4f70-49af-9234-c42b5811d1e1)![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/0616f381-37bb-4c8c-a49e-ce23b706b0c2)![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/507dd369-5492-4f37-9203-d9a2060e8acc)![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/a76e1f58-4328-4b84-b912-9fe4e36ad767)
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/b76f1b3e-4f70-49af-9234-c42b5811d1e1)
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/0616f381-37bb-4c8c-a49e-ce23b706b0c2)
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/507dd369-5492-4f37-9203-d9a2060e8acc)
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/a76e1f58-4328-4b84-b912-9fe4e36ad767)
 
+```python
+sns.countplot(x='species',data=df)
+```
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/8c781406-3a7d-460e-9721-199cb5008b55)
 
+```python
+dfv=df.loc[df['species']=='virginica']
 
+plt.plot(dfv['sepal_length'],np.zeros_like(dfv['sepal_length']),'*')
+plt.xlabel('sepal length')
+plt.show()
+##plt.plot(df_setosa['sepal_length'],np.zeros_like(df_setosa['sepal_length']),'o')
+```
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/454920ac-f521-4398-9ae3-28d89dd670a5)
 
+```python
+dfs=df.loc[df['species']=='setosa']
+dfc=df.loc[df['species']=='versicolor']
 
+plt.plot(dfs['sepal_length'],np.zeros_like(dfs['sepal_length']),'*')
+plt.plot(dfc['sepal_length'],np.zeros_like(dfc['sepal_length']),'X')
+```
 
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/68233c01-e63b-42c6-a13c-86119670d062)
 
+```python
+plt.plot(dfv['sepal_length'],np.zeros_like(dfv['sepal_length']),'o')
+plt.plot(dfs['sepal_length'],np.zeros_like(dfs['sepal_length']),'*')
+plt.plot(dfc['sepal_length'],np.zeros_like(dfc['sepal_length']),'X')
+plt.xlabel('petal_length')
+plt.show()
+```
+
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/eb83b3ce-7d5e-4cab-9df6-3434f2739954)
+
+```python
+plt.plot(dfv['sepal_length'],np.zeros_like(dfv['sepal_length']),'o')
+plt.plot(dfs['sepal_length'],np.zeros_like(dfs['sepal_length']),'+')
+plt.plot(dfc['sepal_length'],np.zeros_like(dfc['sepal_length']),'-')
+plt.xlabel('SEPALLENGTH')
+plt.show()
+```
+
+![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/e9a76a24-572c-4773-aab8-d79ea431c17e)
+
+# RESULT:
+The given datasets are read and outliers are detected and are removed using IQR and z-score methods.
 
 
