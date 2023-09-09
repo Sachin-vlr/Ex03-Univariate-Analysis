@@ -62,8 +62,11 @@ for i in range(0,df.shape[1]):
 ```
 
 ![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/b76f1b3e-4f70-49af-9234-c42b5811d1e1)
+
 ![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/0616f381-37bb-4c8c-a49e-ce23b706b0c2)
+
 ![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/507dd369-5492-4f37-9203-d9a2060e8acc)
+
 ![image](https://github.com/Sachin-vlr/Ex03-Univariate-Analysis/assets/113497666/a76e1f58-4328-4b84-b912-9fe4e36ad767)
 
 ```python
